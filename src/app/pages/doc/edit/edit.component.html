@@ -1,0 +1,19 @@
+<h3>Edit Document!</h3>
+
+<form [formGroup]="editForm">
+    <div class="formGroup">
+        <label for="name">Name: </label><br />
+        <input id="name" type="text" formControlName="name" />
+    </div>
+
+    <div class="formGroup">
+        <label for="description">Desc: </label><br />
+        <textarea
+            id="description"
+            formControlName="description"
+            rows="10"
+        ></textarea>
+    </div>
+
+    <button (click)="submit()">Submit</button>
+</form>

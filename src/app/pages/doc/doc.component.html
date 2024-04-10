@@ -1,0 +1,8 @@
+@if(document){
+<div>
+    <pre>{{document  | json}}</pre>
+    <button (click)="editDoc(document.projectId)">Edit doc description</button>
+</div>
+} @else {
+<p>Please search a document</p>
+}
